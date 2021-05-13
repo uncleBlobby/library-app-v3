@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Library App v3</title>
+        <meta name="description" content="Simple Library App">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">Library</div>
+        <hr>
+        <div id="addBookButton" onclick="openForm()">Click to Add a Book</div>
+        
+        
+        <div id="newBookFormDiv-popup">
+            <form id="newBookForm">
+                <label for="bTitle">Book Title</label><br>
+                <input type="text" id="bTitle" name="bTitle" class="entryField"><br>
+                <label for="bAuthor">Author Name</label><br>
+                <input type="text" id="bAuthor" name="bAuthor" class="entryField"><br>
+                <label for="bPages">Number of Pages</label><br>
+                <input type="text" id="bPages" name="bPages" class="entryField"><br>
+                <label for="bIsRead">
+                    Read?<input type="checkbox" id="bIsRead" name="bIsRead" value="Read">
+                    </label><br>
+                <!--<input type="text" id="bIsRead" name="bIsRead" class="entryField"><br>-->
+                <!--<label for="bNote">Notes:</label><br>
+                <input type="text" id="bNote" name="bNote" class="entryField"><br>-->
+                <input type="button" onclick="addBookToLibrary(bTitle, bAuthor, bPages, bIsRead)" value="Add Book to Library">
+                
+              </form>
+
+            </div>
+        
+        
+        
+        
+        
+        
+        <div id="libraryContainer">
+
+        <!--<div class="bookEntry">book added 1</div>
+        <div class="bookEntry">book added 2</div>
+        <div class="bookEntry">book added 3</div>
+        <div class="bookEntry">book added 4</div>
+        <div class="bookEntry">book added 5</div>
+        <div class="bookEntry">book added 6</div>
+        <div class="bookEntry">book added 1</div>
+        <div class="bookEntry">book added 2</div>
+        <div class="bookEntry">book added 3</div>
+        <div class="bookEntry">book added 4</div>
+        -->
+        </div>
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>
